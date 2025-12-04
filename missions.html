@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космические миссии | Космические путешествия</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>Космические путешествия</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="missions.html" class="nav-link active">Миссии</a></li>
+                <li><a href="planets.html" class="nav-link">Планеты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1>Исторические космические миссии</h1>
+            <p>Узнайте о самых важных космических экспедициях в истории человечества</p>
+        </section>
+
+        <section class="missions">
+            <div class="mission-control">
+                <h2>Управление временной шкалой</h2>
+                <p>Используйте колесо мыши для прокрутки временной шкалы или клавиши влево/вправо для навигации</p>
+                <div class="timeline-controls">
+                    <button id="prev-mission" class="timeline-btn"><i class="fas fa-chevron-left"></i> Назад</button>
+                    <div class="timeline-indicator">
+                        <span id="current-year">1961</span>
+                    </div>
+                    <button id="next-mission" class="timeline-btn">Вперед <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="missions-container">
+                <div class="mission-card active" data-year="1961">
+                    <div class="mission-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Восток-1</h3>
+                    <div class="mission-year">1961</div>
+                    <p>Первый полет человека в космос. Юрий Гагарин совершил один виток вокруг Земли на корабле "Восток-1".</p>
+                    <div class="mission-stats">
+                        <span><i class="fas fa-clock"></i> 108 мин</span>
+                        <span><i class="fas fa-globe"></i> 1 виток</span>
+                    </div>
+                </div>
+
+                <div class="mission-card" data-year="1969">
+                    <div class="mission-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Аполлон-11</h3>
+                    <div class="mission-year">1969</div>
+                    <p>Первая высадка людей на Луну. Нил Армстронг и Базз Олдрин стали первыми людьми, ступившими на поверхность Луны.</p>
+                    <div class="mission-stats">
+                        <span><i class="fas fa-clock"></i> 8 дней</span>
+                        <span><i class="fas fa-user-friends"></i> 3 астронавта</span>
+                    </div>
+                </div>
+
+                <div class="mission-card" data-year="1971">
+                    <div class="mission-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Салют-1</h3>
+                    <div class="mission-year">1971</div>
+                    <p>Первая в мире орбитальная станция. Советская станция "Салют-1" положила начало эре долговременных космических полетов.</p>
+                    <div class="mission-stats">
+                        <span><i class="fas fa-clock"></i> 175 дней</span>
+                        <span><i class="fas fa-weight"></i> 18.6 тонн</span>
+                    </div>
+                </div>
+
+                <div class="mission-card" data-year="1977">
+                    <div class="mission-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Вояджер-1</h3>
+                    <div class="mission-year">1977</div>
+                    <p>Космический зонд, который продолжает передавать данные из межзвездного пространства. Самый удаленный от Земли рукотворный объект.</p>
+                    <div class="mission-stats">
+                        <span><i class="fas fa-road"></i> 23.3 млрд км</span>
+                        <span><i class="fas fa-signal"></i> 46 лет</span>
+                    </div>
+                </div>
+
+                <div class="mission-card" data-year="1998">
+                    <div class="mission-icon">
+                        <i class="fas fa-space-station-moon"></i>
+                    </div>
+                    <h3>МКС</h3>
+                    <div class="mission-year">1998</div>
+                    <p>Международная космическая станция - самый крупный искусственный объект на орбите Земли и символ международного сотрудничества в космосе.</p>
+                    <div class="mission-stats">
+                        <span><i class="fas fa-ruler-combined"></i> 109 м</span>
+                        <span><i class="fas fa-users"></i> 240+ человек</span>
+                    </div>
+                </div>
+
+                <div class="mission-card" data-year="2021">
+                    <div class="mission-icon">
+                        <i class="fas fa-helicopter"></i>
+                    </div>
+                    <h3>Ingenuity</h3>
+                    <div class="mission-year">2021</div>
+                    <p>Первый вертолет, совершивший управляемый полет на другой планете. Демонстрация технологии для будущих исследований Марса.</p>
+                    <div class="mission-stats">
+                        <span><i class="fas fa-helicopter"></i> 1.8 кг</span>
+                        <span><i class="fas fa-plane-departure"></i> 72 полета</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-mission">
+                <h2>Запуск ракеты</h2>
+                <p>Нажмите и удерживайте клавишу "Пробел" для запуска ракеты, отпустите для остановки</p>
+                <div class="launch-pad">
+                    <div class="rocket" id="launch-rocket">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="launch-flames" id="launch-flames"></div>
+                    <div class="launch-progress">
+                        <div class="progress-bar" id="launch-progress"></div>
+                    </div>
+                    <div class="launch-info">
+                        <p>Мощность: <span id="launch-power">0%</span></p>
+                        <p>Высота: <span id="launch-height">0 км</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Космические путешествия &copy; 2023</p>
+            <p>Используйте мышку и клавиатуру для взаимодействия с элементами сайта</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

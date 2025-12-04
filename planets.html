@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планеты Солнечной системы | Космические путешествия</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>Космические путешествия</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="missions.html" class="nav-link">Миссии</a></li>
+                <li><a href="planets.html" class="nav-link active">Планеты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1>Планеты Солнечной системы</h1>
+            <p>Исследуйте удивительные миры, вращающиеся вокруг нашего Солнца</p>
+        </section>
+
+        <section class="planets-section">
+            <div class="planets-control">
+                <h2>Интерактивная солнечная система</h2>
+                <p>Наводите курсор на планеты для получения информации. Используйте клавиши A и D для вращения системы.</p>
+                <div class="controls-info">
+                    <div class="control-key"><kbd>A</kbd> Вращать влево</div>
+                    <div class="control-key"><kbd>D</kbd> Вращать вправо</div>
+                    <div class="control-key"><kbd>SPACE</kbd> Сброс вращения</div>
+                </div>
+                <div class="rotation-indicator">
+                    <span>Угол вращения: <span id="rotation-angle">0°</span></span>
+                </div>
+            </div>
+
+            <div class="solar-system" id="solar-system">
+                <div class="sun" id="sun">
+                    <div class="sun-core"></div>
+                </div>
+            </div>
+
+            <div class="planet-details" id="planet-details">
+                <div class="details-header">
+                    <h2>Выберите планету</h2>
+                    <p>Наведите курсор на планету в солнечной системе выше, чтобы увидеть детали</p>
+                </div>
+                <div class="details-content">
+                    <div class="planet-visual">
+                        <div class="planet-image" id="detail-planet-image"></div>
+                    </div>
+                    <div class="planet-info-text">
+                        <h3 id="detail-planet-name">Планета</h3>
+                        <p id="detail-planet-description">Описание планеты появится здесь после выбора</p>
+                        <div class="planet-stats">
+                            <div class="stat">
+                                <span class="stat-label">Диаметр:</span>
+                                <span class="stat-value" id="detail-planet-diameter">-</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Расстояние от Солнца:</span>
+                                <span class="stat-value" id="detail-planet-distance">-</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Период обращения:</span>
+                                <span class="stat-value" id="detail-planet-period">-</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Температура:</span>
+                                <span class="stat-value" id="detail-planet-temperature">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gravity-experiment">
+                <h2>Эксперимент с гравитацией</h2>
+                <p>Перетаскивайте планеты мышью и наблюдайте за эффектом гравитации. Нажмите R для сброса.</p>
+                <div class="gravity-container" id="gravity-container">
+                    <div class="gravity-object" id="gravity-object1" data-mass="10">
+                        <span>Меркурий</span>
+                    </div>
+                    <div class="gravity-object" id="gravity-object2" data-mass="20">
+                        <span>Венера</span>
+                    </div>
+                    <div class="gravity-object" id="gravity-object3" data-mass="30">
+                        <span>Земля</span>
+                    </div>
+                    <div class="gravity-object" id="gravity-object4" data-mass="40">
+                        <span>Марс</span>
+                    </div>
+                </div>
+                <div class="gravity-info">
+                    <p>Сила гравитации: <span id="gravity-force">0</span> N</p>
+                    <p>Расстояние между объектами: <span id="gravity-distance">0</span> px</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Космические путешествия &copy; 2023</p>
+            <p>Используйте мышку и клавиатуру для взаимодействия с элементами сайта</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

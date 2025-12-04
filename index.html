@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космические путешествия</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>Космические путешествия</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="missions.html" class="nav-link">Миссии</a></li>
+                <li><a href="planets.html" class="nav-link">Планеты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="title">Исследуйте космические просторы</h1>
+                <p class="subtitle">Откройте для себя удивительный мир космоса и межпланетных путешествий</p>
+                <div class="cta-buttons">
+                    <a href="missions.html" class="btn-primary">Наши миссии</a>
+                    <a href="planets.html" class="btn-secondary">Исследовать планеты</a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="planet" id="planet1"></div>
+                <div class="planet" id="planet2"></div>
+                <div class="planet" id="planet3"></div>
+                <div class="spaceship" id="spaceship">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="stars"></div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Почему космос?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Бесконечные открытия</h3>
+                    <p>Космос хранит бесчисленные тайны, которые только предстоит раскрыть человечеству.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3>Новые миры</h3>
+                    <p>Исследование других планет расширяет наши представления о возможной жизни во Вселенной.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Человеческий дух</h3>
+                    <p>Космические путешествия демонстрируют силу человеческого духа и стремление к познанию.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <h2>Космический контроллер</h2>
+            <p>Используйте мышь и клавиатуру, чтобы управлять космическим кораблем:</p>
+            <div class="controller">
+                <div class="controller-info">
+                    <p>Мышь: двигайте курсором, чтобы управлять кораблем</p>
+                    <p>Клавиши: используйте стрелки для движения, пробел для ускорения</p>
+                </div>
+                <div class="controller-display">
+                    <div id="ship-control">
+                        <i class="fas fa-space-shuttle"></i>
+                    </div>
+                    <div class="key-indicator" id="key-indicator">
+                        Нажмите любую клавишу для активации
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Космические путешествия &copy; 2023</p>
+            <p>Используйте мышку и клавиатуру для взаимодействия с элементами сайта</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
